@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineJ</title>
+    <link rel="stylesheet" href="./assets/global.css">
+</head>
+<body>
+    <header id="header">
+        <h1>CineJ</h1>
+    </header>
+    <main id="main">
+        <div id="buscaCard">
+            <div id="busca-conteudo">
+                <h2>Busque seu filme</h2>
+                <input type="text" id="filme">
+                <button type="button">Buscar</button>
+            </div>
+        </div>
+    </main>
+    <section id="section">
+        <span></span>
+        <ol id="cards">
+            
+        </ol>
+        <button id="showMore" type="button">Show More</button>
+        <div id="modal">
+            <div id="modal-content">
+                <span>X</span>
+                <iframe id="video" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+                <p></p>
+            </div>
+          </div>          
+    </section>
+    <footer>
+        <a href="https://www.themoviedb.org/">
+            <img src="./assets/tmdbLogo.svg" alt="Logotipo do TMDB">
+        </a>
+        <p>Este produto utiliza a API do TMDB</p>
+      </footer>
+      
+    <script src="./assets/main.js"></script>
+</body>
+</html>
