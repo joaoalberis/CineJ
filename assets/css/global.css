@@ -20,11 +20,11 @@ body {
 
 #header{
     width: 100%;
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 20px;
     color: #D8D8D8;
 }
 
@@ -37,7 +37,7 @@ header ul {
 
 header ul li a{
     padding:  1rem;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 header ul li:hover{
@@ -45,16 +45,16 @@ header ul li:hover{
 }
 
 #header input {
-    width: 300px;
-    padding: 10px;
+    width: 100px;
+    padding: 5px;
     border-radius: 15px;
     border: none;
-    font-size: 16px;
+    font-size: 12px;
     transition: all .2s ease-in-out;
 }
 
 #header input:focus{
-    padding: .765rem;
+    padding: .565rem;
     box-shadow: 0 4px 8px rgba(5, 5, 5, 0.2);
     outline: #6e6969 solid 3px;
 }
@@ -70,8 +70,8 @@ header ul li:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -81,7 +81,7 @@ header ul li:hover{
 
 #section {
     width: 100%;
-    height: auto;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,13 +92,13 @@ header ul li:hover{
 #section span{
     color: red;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
 }
 
 #cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     list-style: none;
     gap: 2rem;
 }
@@ -109,16 +109,16 @@ header ul li:hover{
     flex-direction: column;
     background-color: #17151584;
     border-radius: 8px;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
     color: white;
-    font-size: 18px;
-    line-height: 28px;
-    width: 400px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 300px;
     font-family: 'Lato', sans-serif;
 }
 
 .card h3{
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -127,7 +127,7 @@ header ul li:hover{
 }
 
 .card p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .card button {
@@ -137,13 +137,12 @@ header ul li:hover{
     display: block;
     border: none;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Lato', sans-serif;
     cursor: pointer;
-    padding: .625rem;
+    padding: .525rem;
     background-color: #8b4513a8;
     width: 60%;
-    margin-inline: auto;
     transition: all .3s ease;
 }
 
@@ -188,7 +187,7 @@ section button:hover{
     position: fixed;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 90%;
     height: 50%;
     align-items: center;
     justify-content: center;
@@ -209,14 +208,14 @@ section button:hover{
 }
 
 #modal-content p{
-    color: white;
+    color: rgb(255, 0, 0);
     font-size: 20px;
     font-family: 'Lato', sans-serif;
 }
   
 #video {
     position: fixed;
-    width: 45%;
+    width: 85%;
     height: 45%;
     border-radius: 8px;
 }
@@ -242,55 +241,60 @@ footer img {
     margin-right: 5px;
 } 
 
-@media screen and (min-width: 320px) {
-    #section span{
-        font-size: 14px;
-    }
-
-    #cards{
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        font-size: 14px;
-        width: 300px;
-    }
-    
-    .card h3{
-        font-size: 18px;
-    }
-    
-    .card p {
-        margin-bottom: 10px;
-    }
-    
-    .card button {
-        font-size: 16px;
-    }
-
-    #modal-content {
-        width: 90%;
-        height: 50%;
-    }
-
-    #modal-content p{
-        font-size: 15px;
-    }
-
-    #video {
-        width: 85%;
-        height: 45%;
-    }
-}
-
 @media screen and (min-width: 450px){
     #section span{
         font-size: 18px;
     }
 
     .card {
-        font-size: 18px;
+        font-size: 16px;
         width: 400px;
+    }
+    
+    .card h3{
+        font-size: 22px;
+    }
+    
+    .card p {
+        margin-bottom: 15px;
+    }
+    
+    .card button {
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    #header{
+        font-size: 30px;
+    }
+    
+    header ul li a{
+        font-size:35px;
+    }
+    
+    #header input {
+        width: 200px;
+        padding: 6px;
+        font-size: 16px;
+    }
+    
+    #section{
+        min-height: 75vh;
+    }
+
+    #section span{
+        font-size: 22px;
+    }
+
+    #cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        font-size: 18px;
+        line-height: 22px;
     }
     
     .card h3{
@@ -305,23 +309,16 @@ footer img {
         font-size: 20px;
     }
 
-    #modal-content p{
-        font-size: 18px;
-    }
-    
-}
-
-@media screen and (min-width: 1024px){
-    #section span{
-        font-size: 22px;
-    }
-
-    #cards{
-        grid-template-columns: 1fr 1fr;
+    #modal-content {
+        height: 70%;
     }
 
     #modal-content p{
         font-size: 30px;
+    }
+
+    #video {
+        height: 65%;
     }
 
     footer {
@@ -333,7 +330,19 @@ footer img {
     } 
 }
 
+@media screen and (min-width: 1150px) {
+    .card{
+        width: 450px;
+    }
+}
+
 @media screen and (min-width: 1366px){
+    
+    #header input {
+        width: 300px;
+        font-size: 18px;
+    }
+
     #section span{
         font-size: 24px;
     }
@@ -342,13 +351,38 @@ footer img {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .card {
+        width: 400px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .card h3{
+        font-size: 26px;
+    }
+    
+    .card button {
+        font-size: 24px;
+    }
+
+    section button {
+        font-size: 26px;
+        padding: .825rem;  
+    }
+
     footer {
         font-size: 30px;
     }
       
     footer img {
-        height: 35px;
+        height: 30px;
     } 
+}
+
+@media screen and (min-width: 1600px) {
+    .card{
+        width: 450px;
+    }
 }
 
 @media screen and (min-width:1800px){
@@ -360,18 +394,51 @@ footer img {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    .card {
+        font-size: 26px;
+        width: 420px;
+    }
+    
+    .card h3{
+        font-size: 28px;
+    }
+    
+    .card button {
+        font-size: 26px;
+        padding: .765rem;
+    }
+
+    section button {
+        font-size: 28px; 
+    }
+
     footer {
-        font-size: 38px;
+        font-size: 40px;
     }
       
     footer img {
-        height: 40px;
+        height: 45px;
     } 
 }
 
+@media screen and (min-width: 2000px) {
+    .card{
+        width: 450px;
+    }
+}
+
 @media screen and (min-width:2300px){
+    #section span{
+        font-size: 40px;
+    }
+
+
     #cards{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .card{
+        width: 400px;
     }
 
     footer {
